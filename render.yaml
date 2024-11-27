@@ -10,14 +10,14 @@ databases:
     description: everywhere
   postgresMajorVersion: "16"
 services:
-- type: web
-  name: Servless
-  runtime: node
-  repo: https://github.com/AlexisElef/Servless
-  plan: free
-  envVars:
-  - fromGroup: Servless
-  region: frankfurt
-  buildCommand: npm install
-  startCommand: npm start
-version: "1"
+  - type: web
+    name: Servless
+    runtime: node
+    repo: https://github.com/AlexisElef/Servless
+    plan: free
+    envVars:
+    - fromGroup: Servless
+    region: frankfurt
+    buildCommand: npm install
+    startCommand: npm start
+  version: "1"
